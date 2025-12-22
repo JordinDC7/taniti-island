@@ -1,4 +1,10 @@
-/* Simple styles for a basic UX prototype */
+/* Taniti Travel — consolidated, compact UX styles
+   Goals:
+   - Keep layout readable and consistent across pages
+   - Reduce vertical scroll by tightening spacing and using responsive grids
+   - Make images consistent sizes with object-fit cropping
+*/
+
 :root {
   --bg: #f6f7fb;
   --card: #ffffff;
@@ -6,14 +12,21 @@
   --muted: #5b6375;
   --border: #d8dbe6;
   --brand: #0f5f7a;
+  --shadow: 0 6px 22px rgba(14, 18, 30, 0.08);
 }
 
 * { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
+  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -22,9 +35,9 @@ header {
 }
 
 .wrap {
-  max-width: 1000px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 12px 16px;
 }
 
 .topnav {
@@ -39,85 +52,109 @@ header {
   display: flex;
   gap: 10px;
   align-items: center;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--brand);
   text-decoration: none;
+  letter-spacing: 0.2px;
 }
 
 .navlinks {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .navlinks a {
   text-decoration: none;
   color: var(--text);
-  padding: 8px 10px;
+  padding: 7px 10px;
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-size: 0.95rem;
 }
 
-.navlinks a:hover {
+.navlinks a:hover,
+.navlinks a:focus-visible {
   border-color: var(--border);
   background: #fafbff;
+  outline: none;
 }
 
-main { padding: 18px 0 32px; }
+main {
+  flex: 1;
+  padding: 10px 0 18px;
+}
+
+/* Typography: tighter margins to reduce scrolling */
+h1, h2, h3 {
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+h1 { font-size: clamp(22px, 2.4vw, 30px); }
+h2 { font-size: clamp(16px, 1.6vw, 20px); }
+p  { margin: 0 0 10px; color: var(--text); }
+small, .muted { color: var(--muted); }
 
 .hero {
   background: var(--brand);
   color: #fff;
   border-radius: 14px;
-  padding: 26px 18px;
+  padding: 16px 16px;
   border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: var(--shadow);
 }
 
+.hero p { color: rgba(255,255,255,0.92); }
+
+/* Consistent image sizing across site */
+.page-image {
+  display: block;
+  width: 100%;
+  height: clamp(140px, 22vh, 200px);
+  object-fit: cover;
+  object-position: center;
+  margin: 10px 0 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: #e9edf7;
+}
+
+/* Content layouts */
 .grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-top: 14px;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 .card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 14px;
+  padding: 14px 14px;
+  box-shadow: 0 2px 12px rgba(14, 18, 30, 0.05);
 }
 
-.card h2, .card h3 { margin: 6px 0 8px; }
-.card p { margin: 6px 0; color: var(--muted); line-height: 1.4; }
+.card p { color: var(--muted); }
 
-.btnrow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  background: var(--brand);
-  color: #fff;
-  padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px solid rgba(0,0,0,0.04);
-}
-
-.btn.secondary {
-  background: #fff;
+.card a {
   color: var(--brand);
-  border: 1px solid var(--brand);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.card a:hover,
+.card a:focus-visible {
+  border-bottom-color: rgba(15,95,122,0.35);
+  outline: none;
 }
 
 .tiles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin-top: 14px;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 .tile {
@@ -126,36 +163,35 @@ main { padding: 18px 0 32px; }
   background: var(--brand);
   color: #fff;
   border-radius: 14px;
-  padding: 22px 16px;
+  padding: 16px 14px;
   border: 1px solid rgba(0,0,0,0.05);
-  min-height: 92px;
+  box-shadow: var(--shadow);
 }
 
-.tile:hover { filter: brightness(1.03); }
-
-footer {
-  border-top: 1px solid var(--border);
-  background: #fff;
+.tile:hover,
+.tile:focus-visible {
+  transform: translateY(-1px);
+  outline: none;
 }
 
-.footerlinks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  color: var(--muted);
-  font-size: 14px;
-}
+.tile small { display: block; opacity: 0.9; }
 
-.kicker {
-  margin-top: 10px;
-  color: var(--muted);
-  font-size: 14px;
-}
+/* Tables / lists (if present) */
+ul, ol { margin: 0 0 10px 18px; padding: 0; }
+li { margin: 0 0 6px; }
 
-ul { margin: 8px 0 0 18px; color: var(--muted); }
-li { margin: 6px 0; }
+/* Compact spacing for sections */
+section + section { margin-top: 12px; }
+
+@media (max-width: 920px) {
+  .wrap { padding: 10px 14px; }
+  .tiles { grid-template-columns: 1fr 1fr; }
+}
 
 @media (max-width: 860px) {
+  .topnav { justify-content: flex-start; }
   .grid2 { grid-template-columns: 1fr; }
   .tiles { grid-template-columns: 1fr; }
+  .navlinks a { font-size: 0.95rem; }
+  .page-image { height: clamp(140px, 26vh, 220px); }
 }
