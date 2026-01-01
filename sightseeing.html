@@ -3,46 +3,68 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Taniti Travel — Sightseeing</title>
+  <title>Sightseeing | Taniti Island</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="wrap topnav">
-      <a class="brand" href="index.html">Taniti Travel</a>
-      <nav class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About Taniti</a>
-        <a href="lodging.html">Plan Your Trip</a>
-        <a href="entertainment.html">Things To Do</a>
-        <a href="transportation.html">Getting Around</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container topbar">
+      <div class="brand"><a href="index.html">Taniti Island</a></div>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lodging.html">Lodging</a></li>
+          <li><a href="entertainment.html">Attractions</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+          <li><a href="restaurants.html">Dining</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="card">
+  <main id="main" class="container">
+    <section class="section">
       <h1>Sightseeing</h1>
-      <p>
-        Most tourists spend time in Taniti City, known for native architecture and nearby
-        white sandy beaches around Yellow Leaf Bay.
-      </p>
-      <ul>
-        <li>Boat or bus tours of the island</li>
-        <li>Hikes in the rainforest</li>
-        <li>Visits to Taniti’s active volcano</li>
-      </ul>
+      <p class="lead">Sightseeing content has been grouped into the Attractions page so visitors can find activities in one place.</p>
+      <p>Go to <a href="entertainment.html">Attractions</a> to view sightseeing highlights, tours, and the Local History Museum.</p>
+    </section>
 
-      <div class="btnrow" style="margin-top:14px;">
-        <a class="btn secondary" href="index.html">Back to Home</a>
-        <a class="btn" href="grocery.html">Next: Grocery Stores</a>
+    <section class="section" aria-label="Quick links">
+      <h2>Quick links</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="media" src="images/waterfall.svg" alt="Waterfall viewpoint illustration" />
+          <div class="pad">
+            <h3>Waterfall viewpoint</h3>
+            <p>Now listed on the Attractions page under Sightseeing highlights.</p>
+            <p><a href="entertainment.html">View attractions</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="media" src="images/boat.svg" alt="Boat tour illustration" />
+          <div class="pad">
+            <h3>Boat tours</h3>
+            <p>Now listed on the Attractions page under Sightseeing highlights.</p>
+            <p><a href="entertainment.html">View attractions</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="media" src="images/museum.svg" alt="Local History Museum illustration" />
+          <div class="pad">
+            <h3>Local History Museum</h3>
+            <p>Photos and details are now included on the Attractions page.</p>
+            <p><a href="entertainment.html">View attractions</a></p>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footerlinks">
-      <span>Contact Info</span><span>|</span><span>Booking Info</span><span>|</span><span>Social Links</span>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="note">Taniti Island Visitor Information Prototype</div>
     </div>
   </footer>
 </body>

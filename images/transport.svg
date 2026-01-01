@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-label="Transportation">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0f6ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="900" height="540" rx="28" fill="url(#g)"/>
+  <rect x="56" y="56" width="788" height="428" rx="24" fill="#ffffff" stroke="#e6e6e6"/>
+  <circle cx="140" cy="140" r="46" fill="#0b5fff" opacity="0.14"/>
+  <circle cx="760" cy="400" r="62" fill="#12b886" opacity="0.12"/>
+  <path d="M120 400 C 260 300, 420 420, 560 360 C 690 290, 760 380, 820 320" fill="none" stroke="#0b5fff" stroke-width="10" opacity="0.18" stroke-linecap="round"/>
+  <text x="50%" y="48%" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="46" fill="#111" font-weight="800">Transportation</text>
+  <text x="50%" y="58%" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" fill="#444">Getting around Taniti</text>
+</svg>

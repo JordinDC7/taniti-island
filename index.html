@@ -3,85 +3,107 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Taniti Travel — Home</title>
+  <title>Taniti Island | Official Visitor Information</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="wrap topnav">
-      <a class="brand" href="index.html">Taniti Travel</a>
-      <nav class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About Taniti</a>
-        <a href="lodging.html">Plan Your Trip</a>
-        <a href="entertainment.html">Things To Do</a>
-        <a href="transportation.html">Getting Around</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container topbar">
+      <div class="brand"><a href="index.html">Taniti Island</a></div>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="lodging.html">Lodging</a></li>
+          <li><a href="entertainment.html">Attractions</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+          <li><a href="restaurants.html">Dining</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="hero" id="about">
-      <h1>Welcome to Taniti</h1>
-      <img class="page-image" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60" alt="Beach shoreline in Taniti" />
-<p>
-        Taniti is a small tropical island with beaches, rainforests, and a mountainous interior
-        with a small active volcano.
-      </p>
-    </section>
-
-    <section class="grid2">
-      <div class="card">
-        <h2>Plan your trip</h2>
-        <p>
-          Explore places to eat, stay, and what to do while you’re here. Use the buttons below
-          to get started quickly.
-        </p>
-        <div class="btnrow">
-          <a class="btn" href="restaurants.html">Explore Restaurants</a>
-          <a class="btn" href="lodging.html">Find Lodging</a>
-          <a class="btn secondary" href="transportation.html">Plan Transportation</a>
+  <main id="main" class="container">
+    <section class="hero" aria-label="Welcome">
+      <div>
+        <h1>Welcome to Taniti</h1>
+        <p class="lead">This site is a simple, official visitor guide for Taniti. Use the navigation above to find lodging, activities, transportation, and dining.</p>
+        <p class="lead">If you are just getting started, scan the general information below and then jump into planning.</p>
+        <div class="btn-row" role="navigation" aria-label="Quick links">
+          <a class="btn" href="lodging.html">View lodging</a>
+          <a class="btn" href="entertainment.html">Explore attractions</a>
+          <a class="btn" href="transportation.html">See transportation</a>
         </div>
       </div>
-
       <div class="card">
-        <h2>What people come for</h2>
-        <p>
-          Most visitors enjoy the beaches, explore the rainforest, and visit the volcano.
-          There are also museums, tours, and more.
-        </p>
-        <p class="kicker">Tip: Use the top navigation anytime to switch sections.</p>
+        <img class="media" src="images/hero-taniti.svg" alt="Illustration of Taniti Island shoreline" />
+        <div class="pad">
+          <strong>Planning tip</strong>
+          <p class="note">Most visitors start with lodging, then choose attractions, and finally check transportation costs for their budget.</p>
+        </div>
       </div>
     </section>
 
-    <section class="tiles" aria-label="Main Sections">
-      <a class="tile" href="restaurants.html"><strong>Restaurants</strong><br/>Local, American-style, Pan-Asian</a>
-      <a class="tile" href="grocery.html"><strong>Grocery Stores</strong><br/>Supermarkets + 24-hour convenience</a>
-      <a class="tile" href="lodging.html"><strong>Lodging</strong><br/>Hostel to 4-star resort</a>
-      <a class="tile" href="entertainment.html"><strong>Entertainment</strong><br/>Snorkeling, tours, nightlife</a>
-      <a class="tile" href="sightseeing.html"><strong>Sightseeing</strong><br/>Taniti City, beaches, volcano</a>
-      <a class="tile" href="transportation.html"><strong>Transportation</strong><br/>Airport, buses, taxis, rentals</a>
+    <section aria-label="General information" class="section">
+      <h2>General island information</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="pad">
+            <h3>Location and climate</h3>
+            <p>Taniti is a small tropical island with warm weather most of the year. Expect humid days and cooler evenings near the coast.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <h3>Language and currency</h3>
+            <p>English is commonly used in visitor areas. Most businesses accept major credit cards, and cash is helpful for small purchases.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <h3>Safety and services</h3>
+            <p>Taniti is considered a safe destination. Visitors should still follow standard travel precautions and keep valuables secure.</p>
+            <p class="note">Need local shopping info? See the <a href="grocery.html">grocery and markets page</a>.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="card" style="margin-top:14px;">
-      <h3>Frequently requested info</h3>
-      <ul>
-        <li>Power outlets: 120 volts (same as the U.S.).</li>
-        <li>Alcohol is not served/sold midnight–9:00 a.m.</li>
-        <li>Drinking age is 18 (not strictly enforced).</li>
-        <li>Violent crime is rare; watch for pickpocketing.</li>
-        <li>Currency: U.S. dollar (many places accept euros/yen).</li>
-      </ul>
+    <section aria-label="Popular pages" class="section">
+      <h2>Popular pages</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="media" src="images/lodging-family.svg" alt="Family friendly lodging illustration" />
+          <div class="pad">
+            <h3>Lodging</h3>
+            <p>Compare hotels, resorts, and smaller stays. Includes visual examples so you can quickly choose a travel style.</p>
+            <p><a href="lodging.html">Go to Lodging</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="media" src="images/museum.svg" alt="Local history museum illustration" />
+          <div class="pad">
+            <h3>Attractions</h3>
+            <p>Explore beaches, guided tours, and the Local History Museum. Sightseeing highlights are grouped here for easier browsing.</p>
+            <p><a href="entertainment.html">Go to Attractions</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="media" src="images/transport.svg" alt="Transportation illustration" />
+          <div class="pad">
+            <h3>Transportation</h3>
+            <p>See how to get to and around the island. Includes rough price ranges to support trip planning.</p>
+            <p><a href="transportation.html">Go to Transportation</a></p>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footerlinks">
-      <span>Contact Info</span>
-      <span>|</span>
-      <span>Booking Info</span>
-      <span>|</span>
-      <span>Social Links</span>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="note">Taniti Island Visitor Information Prototype</div>
     </div>
   </footer>
 </body>

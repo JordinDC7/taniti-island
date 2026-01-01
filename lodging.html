@@ -3,46 +3,103 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Taniti Travel — Lodging</title>
+  <title>Lodging | Taniti Island</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="wrap topnav">
-      <a class="brand" href="index.html">Taniti Travel</a>
-      <nav class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About Taniti</a>
-        <a href="lodging.html">Plan Your Trip</a>
-        <a href="entertainment.html">Things To Do</a>
-        <a href="transportation.html">Getting Around</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container topbar">
+      <div class="brand"><a href="index.html">Taniti Island</a></div>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="lodging.html">Lodging</a></li>
+          <li><a href="entertainment.html">Attractions</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+          <li><a href="restaurants.html">Dining</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="card">
-      <h1>Lodging</h1>
-      <img class="page-image" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=60" alt="Hotel or resort lodging on Taniti" />
-<p>Taniti has lodging options for different budgets and travel styles.</p>
-      <ul>
-        <li>An inexpensive hostel</li>
-        <li>Many small, family-owned hotels</li>
-        <li>A growing number of bed and breakfasts</li>
-        <li>One large, four-star resort</li>
-      </ul>
-      <p class="kicker">All types of lodging are regulated and regularly inspected by the Tanitian government.</p>
+  <main id="main" class="container">
+    <section class="section">
+      <h1>Lodging and accommodations</h1>
+      <p class="lead">Below are common lodging styles on Taniti. Each option includes a quick visual example so visitors can compare choices faster.</p>
+    </section>
 
-      <div class="btnrow" style="margin-top:14px;">
-        <a class="btn secondary" href="index.html">Back to Home</a>
-        <a class="btn" href="sightseeing.html">Next: Sightseeing</a>
+    <section class="section" aria-label="Lodging styles">
+      <h2>Lodging styles</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="media" src="images/lodging-budget.svg" alt="Budget lodging illustration" />
+          <div class="pad">
+            <h3>Budget stays</h3>
+            <p>Small hotels and guesthouses that focus on affordability. Good for short stays and flexible schedules.</p>
+            <p class="note">Typical features: basic rooms, easy check in, simple amenities.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="media" src="images/lodging-family.svg" alt="Family friendly lodging illustration" />
+          <div class="pad">
+            <h3>Family friendly</h3>
+            <p>Mid range hotels and condo style rentals with space for groups and kid friendly features.</p>
+            <p class="note">Typical features: larger rooms, nearby dining, walkable areas.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="media" src="images/lodging-luxury.svg" alt="Luxury lodging illustration" />
+          <div class="pad">
+            <h3>Luxury resorts</h3>
+            <p>Higher end resorts with on site services and activities. Great for relaxing trips and special occasions.</p>
+            <p class="note">Typical features: pool access, concierge services, spa options.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="media" src="images/lodging-eco.svg" alt="Eco friendly lodging illustration" />
+          <div class="pad">
+            <h3>Eco and nature stays</h3>
+            <p>Cabins and small lodges near scenic areas. A good fit for visitors focused on hiking and outdoor activities.</p>
+            <p class="note">Typical features: quiet locations, guided tours, local experiences.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-label="How to choose">
+      <h2>How to choose</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="pad">
+            <h3>Pick your travel style</h3>
+            <p>If your main goal is exploring, budget and eco stays are a strong match. If your goal is convenience, family friendly or resort options can reduce travel time.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <h3>Check proximity</h3>
+            <p>Choose lodging near the beach or downtown depending on what you plan to do most. Transportation costs can also change based on distance.</p>
+            <p class="note">See rough transportation price ranges on the <a href="transportation.html">Transportation</a> page.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <h3>Plan meals</h3>
+            <p>If you prefer walking to meals, consider locations near dining areas. Restaurant locations are listed on the <a href="restaurants.html">Dining</a> page.</p>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footerlinks">
-      <span>Contact Info</span><span>|</span><span>Booking Info</span><span>|</span><span>Social Links</span>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="note">Taniti Island Visitor Information Prototype</div>
     </div>
   </footer>
 </body>

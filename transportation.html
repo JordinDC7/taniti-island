@@ -3,55 +3,121 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Taniti Travel — Transportation</title>
+  <title>Transportation | Taniti Island</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="wrap topnav">
-      <a class="brand" href="index.html">Taniti Travel</a>
-      <nav class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About Taniti</a>
-        <a href="lodging.html">Plan Your Trip</a>
-        <a href="entertainment.html">Things To Do</a>
-        <a href="transportation.html">Getting Around</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container topbar">
+      <div class="brand"><a href="index.html">Taniti Island</a></div>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lodging.html">Lodging</a></li>
+          <li><a href="entertainment.html">Attractions</a></li>
+          <li><a class="active" href="transportation.html">Transportation</a></li>
+          <li><a href="restaurants.html">Dining</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="card">
+  <main id="main" class="container">
+    <section class="section">
       <h1>Transportation</h1>
+      <p class="lead">This page explains how visitors can travel to and around Taniti. It also includes rough price ranges to support budgeting and trip planning.</p>
+    </section>
 
-      <img class="page-image" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=60" alt="Transportation and travel" />
-<h3>Arriving to Taniti</h3>
-      <ul>
-        <li>Most visitors arrive by air</li>
-        <li>Some arrive by a small cruise ship (docks one night per week)</li>
-        <li>Small airport supports small jets and prop planes (expanding for larger jets)</li>
-      </ul>
+    <section class="section" aria-label="Getting to Taniti">
+      <h2>Getting to Taniti</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="pad">
+            <h3>By air</h3>
+            <p>Flights arrive at the main airport. Most visitors use a shuttle, taxi, or rental car to get to their lodging.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <h3>By sea</h3>
+            <p>Some trips include ferry service or small cruises that dock near the harbor.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <h3 style="margin-top:14px;">Getting around (Ground Transportation)</h3>
-      <ul>
-        <li>Public buses in Taniti City run 5 a.m. to 11 p.m.</li>
-        <li>Private buses serve the rest of the island</li>
-        <li>Taxis available in Taniti City</li>
-        <li>Rental cars near the airport</li>
-        <li>Bikes/helmets available to rent (helmets required by law)</li>
-        <li>Taniti City is flat and walkable</li>
-      </ul>
+    <section class="section" aria-label="Getting around Taniti">
+      <h2>Getting around the island</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="media" src="images/transport.svg" alt="Transportation illustration" />
+          <div class="pad">
+            <h3>Common options</h3>
+            <p>Visitors typically use taxis, shuttles, bike rentals, or walking for short distances. Car rentals are helpful for day trips and viewpoints.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <h3>Accessibility</h3>
+            <p>Many visitor areas are walkable. For longer trips, a taxi or shuttle is usually the easiest option.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <div class="btnrow" style="margin-top:14px;">
-        <a class="btn secondary" href="index.html">Back to Home</a>
-        <a class="btn" href="restaurants.html">Next: Restaurants</a>
+    <section class="section" aria-label="Estimated price ranges">
+      <h2>Estimated price ranges</h2>
+      <p class="note">These are rough estimates to help with planning. Actual costs can change based on distance, time of day, and season.</p>
+
+      <div class="card">
+        <div class="pad">
+          <table class="table" aria-label="Transportation price ranges">
+            <thead>
+              <tr>
+                <th>Transportation option</th>
+                <th>Typical use</th>
+                <th>Estimated range</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Airport taxi</td>
+                <td>Airport to downtown or beach area</td>
+                <td>$15 to $30</td>
+              </tr>
+              <tr>
+                <td>Airport shuttle</td>
+                <td>Shared rides to lodging areas</td>
+                <td>$8 to $18</td>
+              </tr>
+              <tr>
+                <td>Local bus</td>
+                <td>Budget travel between main areas</td>
+                <td>$2 to $5 per ride</td>
+              </tr>
+              <tr>
+                <td>Bike rental</td>
+                <td>Short trips and sightseeing</td>
+                <td>$10 to $20 per day</td>
+              </tr>
+              <tr>
+                <td>Car rental</td>
+                <td>Day trips and flexible schedules</td>
+                <td>$45 to $80 per day</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">Tip: If your lodging is near dining and attractions, you can often spend less on transportation.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footerlinks">
-      <span>Contact Info</span><span>|</span><span>Booking Info</span><span>|</span><span>Social Links</span>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="note">Taniti Island Visitor Information Prototype</div>
     </div>
   </footer>
 </body>

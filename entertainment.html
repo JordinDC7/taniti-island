@@ -3,61 +3,103 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Taniti Travel — Entertainment</title>
+  <title>Attractions | Taniti Island</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="wrap topnav">
-      <a class="brand" href="index.html">Taniti Travel</a>
-      <nav class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About Taniti</a>
-        <a href="lodging.html">Plan Your Trip</a>
-        <a href="entertainment.html">Things To Do</a>
-        <a href="transportation.html">Getting Around</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container topbar">
+      <div class="brand"><a href="index.html">Taniti Island</a></div>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lodging.html">Lodging</a></li>
+          <li><a class="active" href="entertainment.html">Attractions</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+          <li><a href="restaurants.html">Dining</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="card">
-      <h1>Entertainment</h1>
-      <img class="page-image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=60" alt="Outdoor activities and attractions on Taniti" />
-<p>Taniti has lots of activities beyond beaches and rainforest hikes.</p>
-      <ul>
-        <li>Local history museum</li>
-        <li>Chartered fishing tours</li>
-        <li>Snorkeling</li>
-        <li>Zip-lining in the rainforest</li>
-        <li>Pubs (including a microbrewery)</li>
-        <li>Dancing at a new dance club</li>
-        <li>Movies, helicopter rides, an arcade, art galleries, and bowling</li>
-        <li>A nine-hole golf course (planned for next year)</li>
-      </ul>
-      <p class="kicker">Many activities are located in Merriton Landing (north side of Yellow Leaf Bay).</p>
-      <h2>Sightseeing</h2>
-      <p>
-        Most tourists spend time in Taniti City, known for native architecture and nearby
-        white sandy beaches around Yellow Leaf Bay.
-      </p>
-      <ul>
-        <li>Boat or bus tours of the island</li>
-        <li>Hikes in the rainforest</li>
-        <li>Visits to Taniti’s active volcano</li>
-      </ul>
+  <main id="main" class="container">
+    <section class="section">
+      <h1>Attractions and things to do</h1>
+      <p class="lead">This page combines entertainment and sightseeing so visitors can find activities in one place. Photos are included to make options easier to recognize and compare.</p>
+      <p class="note">If you previously used a separate sightseeing page, it is now grouped here for easier browsing. You can still access the older page at <a href="sightseeing.html">Sightseeing</a>.</p>
+    </section>
 
+    <section class="section" aria-label="Featured attractions">
+      <h2>Featured attractions</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="media" src="images/museum.svg" alt="Local History Museum illustration" />
+          <div class="pad">
+            <h3>Local History Museum</h3>
+            <p>Learn about Taniti's history, culture, and local traditions. A good option for families and rainy day plans.</p>
+          </div>
+        </article>
 
-      <div class="btnrow" style="margin-top:14px;">
-        <a class="btn secondary" href="index.html">Back to Home</a>
-        <a class="btn" href="transportation.html">Next: Transportation</a>
+        <article class="card">
+          <img class="media" src="images/beach.svg" alt="Beach illustration" />
+          <div class="pad">
+            <h3>Beaches and swimming</h3>
+            <p>Relax on the shoreline, swim in calm waters, and enjoy sunset walks along the coast.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="media" src="images/hike.svg" alt="Hiking trail illustration" />
+          <div class="pad">
+            <h3>Guided hikes</h3>
+            <p>Explore scenic trails with local guides. Options range from easy walks to longer hikes.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="media" src="images/market.svg" alt="Local market illustration" />
+          <div class="pad">
+            <h3>Markets and local crafts</h3>
+            <p>Browse handmade items and local goods. Great for souvenirs and quick snacks.</p>
+            <p class="note">See more shopping details on the <a href="grocery.html">Grocery and Markets</a> page.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Sightseeing highlights">
+      <h2>Sightseeing highlights</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="media" src="images/waterfall.svg" alt="Waterfall viewpoint illustration" />
+          <div class="pad">
+            <h3>Waterfall viewpoint</h3>
+            <p>A short trip outside town with a marked overlook. Morning visits are usually less crowded.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="media" src="images/boat.svg" alt="Boat tour illustration" />
+          <div class="pad">
+            <h3>Boat tours</h3>
+            <p>Coastal tours run throughout the day. Some tours include snorkeling stops.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="media" src="images/temple.svg" alt="Historic site illustration" />
+          <div class="pad">
+            <h3>Historic sites</h3>
+            <p>Visit preserved locations and guided exhibits that highlight island history and architecture.</p>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footerlinks">
-      <span>Contact Info</span><span>|</span><span>Booking Info</span><span>|</span><span>Social Links</span>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="note">Taniti Island Visitor Information Prototype</div>
     </div>
   </footer>
 </body>

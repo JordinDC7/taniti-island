@@ -3,43 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Taniti Travel — Grocery Stores</title>
+  <title>Grocery and Markets | Taniti Island</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="wrap topnav">
-      <a class="brand" href="index.html">Taniti Travel</a>
-      <nav class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About Taniti</a>
-        <a href="lodging.html">Plan Your Trip</a>
-        <a href="entertainment.html">Things To Do</a>
-        <a href="transportation.html">Getting Around</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container topbar">
+      <div class="brand"><a href="index.html">Taniti Island</a></div>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lodging.html">Lodging</a></li>
+          <li><a href="entertainment.html">Attractions</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+          <li><a href="restaurants.html">Dining</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="card">
-      <h1>Grocery Stores</h1>
-      <p>Visitors can find groceries and essentials at several locations.</p>
-      <ul>
-        <li>2 supermarkets</li>
-        <li>2 smaller grocery stores</li>
-        <li>1 convenience store open 24 hours a day</li>
-      </ul>
+  <main id="main" class="container">
+    <section class="section">
+      <h1>Grocery and markets</h1>
+      <p class="lead">This page lists common shopping options for visitors who want quick groceries, snacks, or local items.</p>
+    </section>
 
-      <div class="btnrow" style="margin-top:14px;">
-        <a class="btn secondary" href="index.html">Back to Home</a>
-        <a class="btn" href="entertainment.html">Next: Entertainment</a>
+    <section class="section" aria-label="Shopping options">
+      <h2>Shopping options</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="media" src="images/market.svg" alt="Local market illustration" />
+          <div class="pad">
+            <h3>Local markets</h3>
+            <p>Fresh produce, simple meals, and local crafts. The night market is popular for quick bites.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <h3>Small grocery stores</h3>
+            <p>Basic groceries, water, and snacks. These are usually located near downtown and lodging areas.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <h3>Pharmacy and essentials</h3>
+            <p>Personal care items and basic travel essentials are available at several shops near the visitor center.</p>
+          </div>
+        </article>
       </div>
+      <p class="note">For dining options with locations and photos, visit the <a href="restaurants.html">Dining</a> page.</p>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footerlinks">
-      <span>Contact Info</span><span>|</span><span>Booking Info</span><span>|</span><span>Social Links</span>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="note">Taniti Island Visitor Information Prototype</div>
     </div>
   </footer>
 </body>
