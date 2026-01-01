@@ -58,7 +58,7 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
 }
 
-.header-inner {
+.header-inner, .topbar {
   max-width: 1050px;
   margin: 0 auto;
   padding: 14px 16px;
@@ -92,9 +92,16 @@ a:hover { text-decoration: underline; }
 }
 
 .nav a[aria-current="page"],
+.nav a.active,
 .nav a:hover {
   background: #f1f3f5;
 }
+
+
+.section { margin: 18px 0; }
+.lead { margin: 0; color: var(--muted); max-width: 75ch; }
+.pad { padding: 14px; }
+.media { width: 100%; height: 200px; object-fit: cover; background: #f2f2f2; }
 
 .container {
   max-width: 1050px;
@@ -134,6 +141,24 @@ a:hover { text-decoration: underline; }
   flex-wrap: wrap;
 }
 
+/* aliases used in pages */
+.btn-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+}
+
+.btn:hover { text-decoration: none; }
+
 .button {
   display: inline-block;
   padding: 10px 12px;
@@ -151,7 +176,7 @@ a:hover { text-decoration: underline; }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 14px;
   margin-top: 16px;
 }
